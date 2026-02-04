@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* جميع الأنماط تبقى كما هي بدون تغيير */
+        /* جميع الأنماط تبقى كما هي مع تعديلات طفيفة */
         :root {
             --primary-color: #2c5282;
             --secondary-color: #4299e1;
@@ -54,11 +54,11 @@
             background: linear-gradient(135deg, #171923 0%, #1a202c 100%);
         }
 
-        /* شريط التنقل المتحرك */
+        /* شريط التنقل المتحرك - تم تصغير حجم الخط */
         .navbar {
             background: linear-gradient(90deg, var(--primary-color), #2b6cb0);
             color: white;
-            padding: 1.2rem 0;
+            padding: 0.8rem 0;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             position: sticky;
             top: 0;
@@ -75,29 +75,30 @@
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        /* تصغير حجم الخط في الترويسة */
         .logo h1 {
-            font-size: 1.6rem;
-            margin-bottom: 0.3rem;
+            font-size: 1.3rem;
+            margin-bottom: 0.2rem;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.6rem;
             animation: fadeIn 1s ease;
         }
 
         .logo p {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             opacity: 0.9;
         }
 
         .nav-controls {
             display: flex;
-            gap: 1rem;
+            gap: 0.8rem;
             align-items: center;
         }
 
@@ -105,15 +106,15 @@
             background: rgba(255, 255, 255, 0.1);
             border: none;
             color: white;
-            width: 42px;
-            height: 42px;
+            width: 38px;
+            height: 38px;
             border-radius: 50%;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: var(--transition);
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         .icon-btn:hover {
@@ -123,9 +124,9 @@
 
         /* الحاوية الرئيسية */
         .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 2rem;
+            max-width: 1100px;
+            margin: 1.5rem auto;
+            padding: 0 1.5rem;
             animation: fadeIn 0.8s ease;
         }
 
@@ -148,13 +149,13 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* شاشة البداية */
+        /* شاشة البداية - نقل مربع الأسئلة للأمام */
         .exam-header {
             text-align: center;
-            margin-bottom: 3rem;
-            padding: 3rem;
+            margin-bottom: 2rem;
+            padding: 2rem;
             background: var(--card-bg);
-            border-radius: 20px;
+            border-radius: 18px;
             box-shadow: var(--shadow);
             border: 1px solid var(--border-color);
             animation: fadeIn 0.8s ease;
@@ -162,8 +163,8 @@
 
         .exam-header h1 {
             color: var(--primary-color);
-            margin-bottom: 2rem;
-            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
             position: relative;
             display: inline-block;
         }
@@ -171,42 +172,42 @@
         .exam-header h1:after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -8px;
             right: 50%;
             transform: translateX(50%);
-            width: 80px;
-            height: 4px;
+            width: 70px;
+            height: 3px;
             background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
             border-radius: 2px;
         }
 
         .university-info {
-            margin: 2rem 0;
-            padding: 1.5rem;
+            margin: 1.5rem 0;
+            padding: 1.2rem;
             background: rgba(66, 153, 225, 0.05);
-            border-radius: 15px;
+            border-radius: 12px;
             border-right: 4px solid var(--secondary-color);
         }
 
         .university-info h3 {
-            margin: 0.8rem 0;
+            margin: 0.6rem 0;
             color: var(--secondary-color);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         .student-info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-            padding-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
             border-top: 2px solid rgba(66, 153, 225, 0.2);
         }
 
         .info-item {
             background: linear-gradient(135deg, rgba(66, 153, 225, 0.05), rgba(44, 82, 130, 0.05));
-            padding: 1.2rem;
-            border-radius: 12px;
+            padding: 1rem;
+            border-radius: 10px;
             border: 1px solid rgba(66, 153, 225, 0.1);
             transition: var(--transition);
         }
@@ -219,31 +220,31 @@
         .info-item p:first-child {
             font-weight: 700;
             color: var(--primary-color);
-            margin-bottom: 0.5rem;
-            font-size: 1rem;
+            margin-bottom: 0.4rem;
+            font-size: 0.9rem;
         }
 
         .info-item p:last-child {
             color: var(--text-color);
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         .instructions {
             background: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 20px;
-            margin-bottom: 2.5rem;
+            padding: 2rem;
+            border-radius: 18px;
+            margin-bottom: 2rem;
             box-shadow: var(--shadow);
             border: 1px solid var(--border-color);
         }
 
         .instructions h3 {
             color: var(--secondary-color);
-            margin-bottom: 1.5rem;
-            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.2rem;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.6rem;
         }
 
         .instructions ul {
@@ -252,10 +253,10 @@
         }
 
         .instructions li {
-            margin-bottom: 1rem;
-            padding-right: 2.2rem;
+            margin-bottom: 0.8rem;
+            padding-right: 1.8rem;
             position: relative;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         .instructions li:before {
@@ -264,10 +265,10 @@
             right: 0;
             color: var(--success-color);
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1rem;
             background: rgba(56, 161, 105, 0.1);
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -276,17 +277,17 @@
 
         /* الأزرار */
         .btn {
-            padding: 1rem 2rem;
+            padding: 0.9rem 1.8rem;
             border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
+            border-radius: 10px;
+            font-size: 1rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.8rem;
+            gap: 0.6rem;
             font-family: 'Cairo', sans-serif;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             position: relative;
@@ -315,11 +316,11 @@
         .start-btn {
             background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
             color: white;
-            font-size: 1.3rem;
-            padding: 1.2rem 2.8rem;
-            margin: 2.5rem auto;
+            font-size: 1.2rem;
+            padding: 1.1rem 2.5rem;
+            margin: 2rem auto;
             display: block;
-            min-width: 260px;
+            min-width: 240px;
         }
 
         .start-btn:hover {
@@ -372,34 +373,34 @@
             box-shadow: 0 6px 18px rgba(56, 161, 105, 0.25);
         }
 
-        /* شاشة الامتحان */
+        /* شاشة الامتحان - إعادة ترتيب العناصر */
         .exam-controls {
             background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 18px;
-            margin-bottom: 2rem;
+            padding: 1.8rem;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
             box-shadow: var(--shadow);
             border: 1px solid var(--border-color);
             animation: fadeIn 0.6s ease;
         }
 
         .progress-container {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
 
         .progress-info {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             font-weight: 600;
         }
 
         .progress-bar {
             width: 100%;
-            height: 10px;
+            height: 8px;
             background: var(--light-color);
-            border-radius: 5px;
+            border-radius: 4px;
             overflow: hidden;
             position: relative;
         }
@@ -409,7 +410,7 @@
             background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
             width: 0%;
             transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            border-radius: 5px;
+            border-radius: 4px;
             position: relative;
         }
 
@@ -434,21 +435,21 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+            gap: 1.2rem;
+            margin-top: 1.2rem;
         }
 
         .timer {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--accent-color);
             background: var(--card-bg);
-            padding: 0.7rem 1.4rem;
-            border-radius: 10px;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
             box-shadow: var(--shadow);
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.6rem;
             border: 2px solid rgba(229, 62, 62, 0.2);
             animation: pulse 2s infinite;
         }
@@ -458,38 +459,109 @@
             50% { transform: scale(1.02); }
         }
 
-        /* منطقة الأسئلة */
+        /* شبكة التنقل بين الأسئلة */
+        .questions-nav-grid {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            animation: fadeIn 0.6s ease;
+        }
+
+        .questions-nav-grid h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1.2rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .questions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+            gap: 0.8rem;
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 0.5rem;
+        }
+
+        .question-nav-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            border: 2px solid var(--border-color);
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .question-nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.15);
+            border-color: var(--secondary-color);
+        }
+
+        .question-nav-btn.current {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            border-color: var(--secondary-color);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+        }
+
+        .question-nav-btn.answered {
+            background: rgba(56, 161, 105, 0.1);
+            color: var(--success-color);
+            border-color: var(--success-color);
+        }
+
+        .question-nav-btn.unanswered {
+            background: rgba(214, 158, 46, 0.1);
+            color: var(--warning-color);
+            border-color: var(--warning-color);
+        }
+
+        /* منطقة الأسئلة - تم نقلها للأمام */
         .question-container {
             background: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 20px;
+            padding: 2rem;
+            border-radius: 18px;
             box-shadow: var(--shadow);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             border: 1px solid var(--border-color);
             animation: slideUp 0.5s ease;
+            order: -1; /* يجعل السؤال يظهر أولاً */
         }
 
         .question-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .question-number {
             color: white;
             font-weight: 800;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-            padding: 0.6rem 1.3rem;
+            padding: 0.5rem 1.1rem;
             border-radius: 50px;
             box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
         }
 
         .question-text {
-            font-size: 1.4rem;
-            margin-bottom: 2rem;
-            line-height: 1.8;
+            font-size: 1.3rem;
+            margin-bottom: 1.8rem;
+            line-height: 1.7;
             color: var(--text-color);
             font-weight: 600;
         }
@@ -497,8 +569,8 @@
         .options-container {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 1rem;
-            margin-bottom: 2rem;
+            gap: 0.9rem;
+            margin-bottom: 1.8rem;
         }
 
         @media (min-width: 768px) {
@@ -509,14 +581,14 @@
 
         .option {
             background: var(--bg-color);
-            padding: 1.3rem;
-            border-radius: 12px;
+            padding: 1.2rem;
+            border-radius: 10px;
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 2px solid var(--border-color);
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.9rem;
             position: relative;
             overflow: hidden;
         }
@@ -534,7 +606,7 @@
         }
 
         .option:hover {
-            transform: translateX(-6px);
+            transform: translateX(-4px);
             border-color: var(--secondary-color);
             box-shadow: 0 6px 20px rgba(66, 153, 225, 0.15);
         }
@@ -546,7 +618,7 @@
         .option.selected {
             border-color: var(--success-color);
             background: rgba(56, 161, 105, 0.05);
-            transform: translateX(-6px);
+            transform: translateX(-4px);
         }
 
         .option.selected:before {
@@ -566,8 +638,8 @@
         }
 
         .option-marker {
-            width: 34px;
-            height: 34px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -577,7 +649,7 @@
             color: var(--text-color);
             flex-shrink: 0;
             transition: all 0.3s;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
 
         .option.selected .option-marker {
@@ -588,19 +660,19 @@
 
         .option-text {
             flex: 1;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 500;
         }
 
         .navigation-buttons {
             display: flex;
             justify-content: space-between;
-            margin-top: 2.5rem;
-            gap: 1.5rem;
+            margin-top: 2rem;
+            gap: 1.2rem;
         }
 
         .navigation-buttons .btn {
-            min-width: 160px;
+            min-width: 140px;
             flex: 1;
         }
 
@@ -609,12 +681,12 @@
             background: linear-gradient(135deg, rgba(214, 158, 46, 0.1), rgba(214, 158, 46, 0.05));
             border: 2px solid var(--warning-color);
             color: var(--warning-color);
-            padding: 1rem 1.5rem;
-            border-radius: 12px;
-            margin-top: 1.5rem;
+            padding: 0.9rem 1.2rem;
+            border-radius: 10px;
+            margin-top: 1.2rem;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.6rem;
             font-weight: 600;
             animation: fadeIn 0.5s ease;
         }
@@ -622,21 +694,21 @@
         /* شاشة النتائج */
         .results-header {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             animation: fadeIn 0.8s ease;
         }
 
         .results-header h1 {
             color: var(--secondary-color);
-            margin-bottom: 2.5rem;
-            font-size: 2.3rem;
+            margin-bottom: 2rem;
+            font-size: 2rem;
         }
 
         .score-display {
             position: relative;
-            width: 280px;
-            height: 280px;
-            margin: 2rem auto;
+            width: 260px;
+            height: 260px;
+            margin: 1.5rem auto;
         }
 
         .score-circle {
@@ -647,7 +719,7 @@
 
         .circle-bg, .circle-progress {
             fill: none;
-            stroke-width: 12;
+            stroke-width: 10;
             stroke-linecap: round;
             transform: rotate(-90deg);
             transform-origin: 50% 50%;
@@ -673,27 +745,27 @@
         }
 
         .score-text h2 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: var(--secondary-color);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
         .score-text p {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             color: var(--text-color);
         }
 
         .results-details {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 1.8rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
         }
 
         .result-card {
             background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 18px;
+            padding: 1.8rem;
+            border-radius: 16px;
             text-align: center;
             box-shadow: var(--shadow);
             border: 1px solid var(--border-color);
@@ -705,17 +777,17 @@
         }
 
         .result-card h3 {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
             color: var(--secondary-color);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.7rem;
+            gap: 0.6rem;
         }
 
         .stat {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 800;
             color: var(--text-color);
         }
@@ -723,17 +795,17 @@
         .results-controls {
             display: flex;
             justify-content: center;
-            gap: 1.8rem;
-            margin-bottom: 3rem;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
             flex-wrap: wrap;
         }
 
-        /* قسم مراجعة الإجابات */
+        /* قسم مراجعة الإجابات - تظهر الإجابات الخطأ فقط */
         .review-section {
             background: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 20px;
-            margin-top: 3rem;
+            padding: 2rem;
+            border-radius: 18px;
+            margin-top: 2.5rem;
             box-shadow: var(--shadow);
             border: 1px solid var(--border-color);
             display: none;
@@ -742,56 +814,56 @@
 
         .review-section h3 {
             color: var(--secondary-color);
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
             text-align: center;
-            font-size: 1.7rem;
+            font-size: 1.5rem;
         }
 
         .review-list {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1.8rem;
         }
 
         .review-item {
             background: var(--bg-color);
-            padding: 2rem;
-            border-radius: 18px;
-            border-right: 5px solid var(--secondary-color);
+            padding: 1.8rem;
+            border-radius: 16px;
+            border-right: 5px solid var(--accent-color);
             transition: transform 0.3s ease;
             border: 1px solid var(--border-color);
         }
 
         .review-item:hover {
-            transform: translateX(-5px);
+            transform: translateX(-4px);
         }
 
         .review-question {
             font-weight: 700;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             color: var(--text-color);
-            font-size: 1.2rem;
-            line-height: 1.7;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
 
         .review-answers {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 0.9rem;
         }
 
         .answer-item {
-            padding: 1rem;
-            border-radius: 10px;
+            padding: 0.9rem;
+            border-radius: 8px;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.6rem;
             transition: all 0.3s;
         }
 
         .answer-item.user-answer {
-            background: rgba(66, 153, 225, 0.08);
-            border-right: 4px solid var(--secondary-color);
+            background: rgba(229, 62, 62, 0.08);
+            border-right: 4px solid var(--accent-color);
         }
 
         .answer-item.correct-answer {
@@ -800,22 +872,22 @@
         }
 
         .answer-item i {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         /* التذييل */
         .footer {
             text-align: center;
-            padding: 2.5rem;
+            padding: 2rem;
             background: linear-gradient(90deg, var(--primary-color), #2b6cb0);
             color: white;
-            margin-top: 4rem;
+            margin-top: 3rem;
             box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
         }
 
         .footer p {
-            margin: 0.8rem 0;
-            font-size: 1rem;
+            margin: 0.6rem 0;
+            font-size: 0.9rem;
         }
 
         /* النوافذ المنبثقة */
@@ -835,9 +907,9 @@
 
         .modal-content {
             background: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 20px;
-            max-width: 500px;
+            padding: 2rem;
+            border-radius: 18px;
+            max-width: 450px;
             width: 90%;
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
             border: 1px solid var(--border-color);
@@ -846,28 +918,29 @@
 
         .modal-content h3 {
             color: var(--secondary-color);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.6rem;
+            font-size: 1.3rem;
         }
 
         .modal-buttons {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin-top: 2rem;
+            gap: 1.2rem;
+            margin-top: 1.8rem;
         }
 
         /* تصميم متجاوب */
         @media (max-width: 768px) {
             .container {
-                margin: 1.5rem auto;
-                padding: 0 1.2rem;
+                margin: 1rem auto;
+                padding: 0 1rem;
             }
             
             .exam-header h1 {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
             
             .student-info {
@@ -875,15 +948,25 @@
             }
             
             .question-text {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
             
             .option {
-                padding: 1.1rem;
+                padding: 1rem;
             }
             
             .option-text {
-                font-size: 1.05rem;
+                font-size: 1rem;
+            }
+            
+            .questions-grid {
+                grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+            }
+            
+            .question-nav-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
             }
             
             .navigation-buttons {
@@ -896,7 +979,7 @@
             
             .results-controls {
                 flex-direction: column;
-                gap: 1.2rem;
+                gap: 1rem;
             }
             
             .results-controls .btn {
@@ -904,29 +987,29 @@
             }
             
             .score-display {
-                width: 240px;
-                height: 240px;
+                width: 220px;
+                height: 220px;
             }
             
             .score-text h2 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             
             .stat {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             
             .timer {
-                font-size: 1.3rem;
-                padding: 0.6rem 1.2rem;
+                font-size: 1.1rem;
+                padding: 0.5rem 1rem;
             }
         }
 
         /* تأثيرات الكونفيتي */
         .confetti {
             position: fixed;
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
             background-color: #f0f;
             opacity: 0;
             z-index: 9999;
@@ -935,7 +1018,7 @@
     </style>
 </head>
 <body>
-    <!-- شريط التنقل -->
+    <!-- شريط التنقل - تم حذف زر المساعدة -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
@@ -945,9 +1028,6 @@
             <div class="nav-controls">
                 <button id="darkModeToggle" class="icon-btn" title="الوضع الليلي">
                     <i class="fas fa-moon"></i>
-                </button>
-                <button id="helpBtn" class="icon-btn" title="المساعدة">
-                    <i class="fas fa-question-circle"></i>
                 </button>
             </div>
         </div>
@@ -984,6 +1064,7 @@
             
             <div class="instructions">
                 <h3><i class="fas fa-info-circle"></i> تعليمات الامتحان:</h3>
+                <ul>
                     <li>اختر الإجابة الصحيحة بالنقر على الخيار المناسب</li>
                     <li>يمكنك تغيير إجابتك قبل الانتقال للسؤال التالي</li>
                     <li>سيتم تنبيهك عن الأسئلة التي لم تتم الإجابة عليها</li>
@@ -996,13 +1077,46 @@
                 <i class="fas fa-play-circle"></i> ابدأ الامتحان
             </button>
             
-            <div style="text-align: center; margin-top: 2rem; color: var(--text-color); opacity: 0.8; font-size: 1.1rem;">
+            <div style="text-align: center; margin-top: 1.5rem; color: var(--text-color); opacity: 0.8; font-size: 1rem;">
                 <p><i class="fas fa-lightbulb"></i> تذكر: اجب مستعينًا بالله تعالى على الأسئلة التالية</p>
             </div>
         </section>
 
         <!-- شاشة الامتحان -->
         <section id="examScreen" class="screen">
+            <!-- مربع الأسئلة في المقدمة -->
+            <div class="question-container">
+                <div class="question-header">
+                    <div id="questionNumber" class="question-number">س1</div>
+                    <div id="questionStatus" style="color: var(--warning-color); font-weight: bold;">
+                        <i class="fas fa-star"></i> جديد
+                    </div>
+                </div>
+                
+                <h2 id="questionText" class="question-text"></h2>
+                
+                <div id="optionsContainer" class="options-container">
+                    <!-- سيتم تعبئة الخيارات ديناميكياً -->
+                </div>
+                
+                <div class="navigation-buttons">
+                    <button id="prevBtn" class="btn secondary-btn">
+                        <i class="fas fa-arrow-right"></i> السابق
+                    </button>
+                    <button id="nextBtn" class="btn primary-btn">
+                        التالي <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- شبكة التنقل بين الأسئلة -->
+            <div class="questions-nav-grid">
+                <h3><i class="fas fa-layer-group"></i> التنقل بين الأسئلة</h3>
+                <div id="questionsGrid" class="questions-grid">
+                    <!-- سيتم تعبئة أزرار الأسئلة ديناميكياً -->
+                </div>
+            </div>
+            
             <div class="exam-controls">
                 <div class="progress-container">
                     <div class="progress-info">
@@ -1030,30 +1144,6 @@
                 <i class="fas fa-exclamation-triangle"></i>
                 <span id="unansweredCount">0</span> أسئلة لم تتم الإجابة عليها
             </div>
-            
-            <div class="question-container">
-                <div class="question-header">
-                    <div id="questionNumber" class="question-number">س1</div>
-                    <div id="questionStatus" style="color: var(--warning-color); font-weight: bold;">
-                        <i class="fas fa-star"></i> جديد
-                    </div>
-                </div>
-                
-                <h2 id="questionText" class="question-text"></h2>
-                
-                <div id="optionsContainer" class="options-container">
-                    <!-- سيتم تعبئة الخيارات ديناميكياً -->
-                </div>
-                
-                <div class="navigation-buttons">
-                    <button id="prevBtn" class="btn secondary-btn">
-                        <i class="fas fa-arrow-right"></i> السابق
-                    </button>
-                    <button id="nextBtn" class="btn primary-btn">
-                        التالي <i class="fas fa-arrow-left"></i>
-                    </button>
-                </div>
-            </div>
         </section>
 
         <!-- شاشة النتائج -->
@@ -1063,15 +1153,15 @@
                 
                 <div class="score-display">
                     <div class="score-circle">
-                        <svg width="280" height="280">
-                            <circle class="circle-bg" cx="140" cy="140" r="130"></circle>
-                            <circle id="scoreCircle" class="circle-progress" cx="140" cy="140" r="130"></circle>
+                        <svg width="260" height="260">
+                            <circle class="circle-bg" cx="130" cy="130" r="120"></circle>
+                            <circle id="scoreCircle" class="circle-progress" cx="130" cy="130" r="120"></circle>
                         </svg>
                     </div>
                     <div class="score-text">
                         <h2 id="finalScore">0/50</h2>
                         <p id="percentage">0%</p>
-                        <p id="grade" style="font-size: 1.2rem; color: var(--text-color); margin-top: 0.5rem;"></p>
+                        <p id="grade" style="font-size: 1.1rem; color: var(--text-color); margin-top: 0.4rem;"></p>
                     </div>
                 </div>
             </div>
@@ -1097,7 +1187,7 @@
             
             <div class="results-controls">
                 <button id="reviewBtn" class="btn secondary-btn">
-                    <i class="fas fa-list-check"></i> مراجعة الإجابات
+                    <i class="fas fa-list-check"></i> مراجعة الإجابات الخاطئة
                 </button>
                 <button id="newTestBtn" class="btn primary-btn">
                     <i class="fas fa-redo"></i> اختبار جديد
@@ -1107,11 +1197,16 @@
                 </button>
             </div>
             
-            <!-- قسم مراجعة الإجابات -->
+            <!-- قسم مراجعة الإجابات - تظهر الإجابات الخطأ فقط -->
             <div id="reviewSection" class="review-section">
-                <h3><i class="fas fa-clipboard-check"></i> مراجعة الإجابات</h3>
-                <div id="reviewList" class="review-list">
-                    <!-- سيتم تعبئة مراجعة الإجابات هنا -->
+                <h3><i class="fas fa-clipboard-check"></i> مراجعة الإجابات الخاطئة</h3>
+                <div id="wrongAnswersList" class="review-list">
+                    <!-- سيتم تعبئة الإجابات الخاطئة هنا -->
+                </div>
+                <div id="noWrongAnswers" style="text-align: center; padding: 3rem; color: var(--success-color); display: none;">
+                    <i class="fas fa-check-circle" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--success-color);">ممتاز! لم تكن لديك إجابات خاطئة</h3>
+                    <p style="color: var(--text-color); opacity: 0.8; margin-top: 1rem;">جميع إجاباتك كانت صحيحة</p>
                 </div>
                 <div style="text-align: center; margin-top: 2rem;">
                     <button id="closeReviewBtn" class="btn secondary-btn">
@@ -1129,31 +1224,7 @@
         <p>تم تطوير هذا الموقع لأغراض تعليمية وتدريبية</p>
     </footer>
 
-    <!-- نافذة المساعدة -->
-    <div id="helpModal" class="modal">
-        <div class="modal-content">
-            <h3><i class="fas fa-question-circle"></i> مساعدة</h3>
-            <div style="color: var(--text-color); line-height: 1.7;">
-                <p><strong>مميزات النظام:</strong></p>
-                <ul style="list-style: none; padding-right: 1rem;">
-                    <li style="margin-bottom: 0.8rem;">✓ يتم خلط الخيارات قبل كل سؤال</li>
-                    <li style="margin-bottom: 0.8rem;">✓ تنبيه بالأسئلة غير المحلولة</li>
-                    <li style="margin-bottom: 0.8rem;">✓ مؤقت زمني (60 دقيقة) مع تنبيهات</li>
-                    <li style="margin-bottom: 0.8rem;">✓ وضع ليلي للراحة البصرية</li>
-                    <li style="margin-bottom: 0.8rem;">✓ مراجعة الإجابات بعد الانتهاء</li>
-                    <li style="margin-bottom: 0.8rem;">✓ إمكانية إعادة الاختبار</li>
-                </ul>
-                <p style="margin-top: 1.5rem;"><strong>ملاحظة:</strong> يتم خلط ترتيب الخيارات بشكل عشوائي قبل كل سؤال للحفاظ على الحيادية.</p>
-            </div>
-            <div class="modal-buttons">
-                <button id="closeHelpBtn" class="btn primary-btn">
-                    <i class="fas fa-check"></i> فهمت
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- نموذج تأكيد إنهاء الاختبار -->
+    <!-- نموذج تأكيد إنهاء الاختبار فقط -->
     <div id="confirmModal" class="modal">
         <div class="modal-content">
             <h3><i class="fas fa-exclamation-triangle"></i> تأكيد إنهاء الاختبار</h3>
@@ -2465,7 +2536,8 @@
         const retryBtn = document.getElementById('retryBtn');
         const newTestBtn = document.getElementById('newTestBtn');
         const reviewSection = document.getElementById('reviewSection');
-        const reviewList = document.getElementById('reviewList');
+        const wrongAnswersList = document.getElementById('wrongAnswersList');
+        const noWrongAnswers = document.getElementById('noWrongAnswers');
         const closeReviewBtn = document.getElementById('closeReviewBtn');
         const finalScore = document.getElementById('finalScore');
         const percentage = document.getElementById('percentage');
@@ -2475,15 +2547,13 @@
         const timeTaken = document.getElementById('timeTaken');
         const scorePercentage = document.getElementById('scorePercentage');
         const scoreCircle = document.getElementById('scoreCircle');
-        const helpBtn = document.getElementById('helpBtn');
-        const helpModal = document.getElementById('helpModal');
-        const closeHelpBtn = document.getElementById('closeHelpBtn');
         const confirmModal = document.getElementById('confirmModal');
         const cancelEndBtn = document.getElementById('cancelEndBtn');
         const confirmEndBtn = document.getElementById('confirmEndBtn');
         const remainingQuestions = document.getElementById('remainingQuestions');
         const unansweredAlert = document.getElementById('unansweredAlert');
         const unansweredCount = document.getElementById('unansweredCount');
+        const questionsGrid = document.getElementById('questionsGrid');
 
         // تهيئة التطبيق
         document.addEventListener('DOMContentLoaded', () => {
@@ -2505,15 +2575,11 @@
             retryBtn.addEventListener('click', retryExam);
             newTestBtn.addEventListener('click', startNewExam);
             closeReviewBtn.addEventListener('click', () => reviewSection.style.display = 'none');
-            helpBtn.addEventListener('click', () => helpModal.style.display = 'flex');
-            closeHelpBtn.addEventListener('click', () => helpModal.style.display = 'none');
             cancelEndBtn.addEventListener('click', () => confirmModal.style.display = 'none');
             confirmEndBtn.addEventListener('click', endExam);
             
-            [helpModal, confirmModal].forEach(modal => {
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal) modal.style.display = 'none';
-                });
+            confirmModal.addEventListener('click', (e) => {
+                if (e.target === confirmModal) confirmModal.style.display = 'none';
             });
         }
 
@@ -2533,6 +2599,7 @@
             
             startTimer();
             loadQuestion(currentQuestionIndex);
+            updateQuestionsGrid();
             updateUnansweredAlert();
         }
 
@@ -2630,6 +2697,7 @@
             });
             
             updateQuestionStatus(index);
+            updateQuestionsGrid();
         }
 
         // تحديث حالة السؤال
@@ -2642,6 +2710,33 @@
                 statusElement.innerHTML = '<i class="fas fa-check"></i> تم الإجابة';
                 statusElement.style.color = 'var(--success-color)';
             }
+        }
+
+        // تحديث شبكة التنقل بين الأسئلة
+        function updateQuestionsGrid() {
+            questionsGrid.innerHTML = '';
+            
+            shuffledQuestions.forEach((_, index) => {
+                const questionBtn = document.createElement('button');
+                questionBtn.className = 'question-nav-btn';
+                questionBtn.textContent = index + 1;
+                
+                // تحديد حالة الزر
+                if (index === currentQuestionIndex) {
+                    questionBtn.classList.add('current');
+                } else if (userAnswers[index] !== null) {
+                    questionBtn.classList.add('answered');
+                } else {
+                    questionBtn.classList.add('unanswered');
+                }
+                
+                questionBtn.addEventListener('click', () => {
+                    currentQuestionIndex = index;
+                    loadQuestion(currentQuestionIndex);
+                });
+                
+                questionsGrid.appendChild(questionBtn);
+            });
         }
 
         // تحديث تنبيه الأسئلة غير المحلولة
@@ -2829,37 +2924,42 @@
             }
         }
 
-        // عرض/إخفاء المراجعة
+        // عرض/إخفاء المراجعة - تظهر الإجابات الخاطئة فقط
         function toggleReview() {
             const isVisible = reviewSection.style.display === 'block';
             
             if (isVisible) {
                 reviewSection.style.display = 'none';
-                reviewBtn.innerHTML = '<i class="fas fa-list-check"></i> مراجعة الإجابات';
+                reviewBtn.innerHTML = '<i class="fas fa-list-check"></i> مراجعة الإجابات الخاطئة';
             } else {
                 reviewSection.style.display = 'block';
                 reviewBtn.innerHTML = '<i class="fas fa-times"></i> إغلاق المراجعة';
-                generateReview();
+                generateWrongAnswersReview();
             }
         }
 
-        // توليد مراجعة الإجابات
-        function generateReview() {
-            reviewList.innerHTML = '';
+        // توليد مراجعة الإجابات الخاطئة فقط
+        function generateWrongAnswersReview() {
+            wrongAnswersList.innerHTML = '';
+            let wrongCount = 0;
             
             shuffledQuestions.forEach((question, index) => {
-                const reviewItem = document.createElement('div');
-                reviewItem.className = 'review-item';
-                
-                const questionDiv = document.createElement('div');
-                questionDiv.className = 'review-question';
-                questionDiv.textContent = `${index + 1}. ${question.question}`;
-                
-                const answersDiv = document.createElement('div');
-                answersDiv.className = 'review-answers';
-                
                 const userAnswerIndex = userAnswers[index];
-                if (userAnswerIndex !== null) {
+                
+                // عرض فقط الأسئلة التي أجاب عليها المستخدم بشكل خاطئ
+                if (userAnswerIndex !== null && userAnswerIndex !== question.shuffledCorrect) {
+                    wrongCount++;
+                    
+                    const reviewItem = document.createElement('div');
+                    reviewItem.className = 'review-item';
+                    
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'review-question';
+                    questionDiv.textContent = `${index + 1}. ${question.question}`;
+                    
+                    const answersDiv = document.createElement('div');
+                    answersDiv.className = 'review-answers';
+                    
                     const userAnswerItem = document.createElement('div');
                     userAnswerItem.className = 'answer-item user-answer';
                     userAnswerItem.innerHTML = `
@@ -2867,47 +2967,39 @@
                         <span>إجابتك: ${question.shuffledOptions[userAnswerIndex]}</span>
                     `;
                     answersDiv.appendChild(userAnswerItem);
+                    
+                    const correctAnswerItem = document.createElement('div');
+                    correctAnswerItem.className = 'answer-item correct-answer';
+                    correctAnswerItem.innerHTML = `
+                        <i class="fas fa-check"></i>
+                        <span>الإجابة الصحيحة: ${question.shuffledOptions[question.shuffledCorrect]}</span>
+                    `;
+                    answersDiv.appendChild(correctAnswerItem);
+                    
+                    if (question.explanation) {
+                        const explanationDiv = document.createElement('div');
+                        explanationDiv.style.marginTop = '0.5rem';
+                        explanationDiv.style.fontSize = '0.95rem';
+                        explanationDiv.style.color = 'var(--text-color)';
+                        explanationDiv.style.opacity = '0.8';
+                        explanationDiv.textContent = question.explanation;
+                        answersDiv.appendChild(explanationDiv);
+                    }
+                    
+                    reviewItem.appendChild(questionDiv);
+                    reviewItem.appendChild(answersDiv);
+                    wrongAnswersList.appendChild(reviewItem);
                 }
-                
-                const correctAnswerItem = document.createElement('div');
-                correctAnswerItem.className = 'answer-item correct-answer';
-                correctAnswerItem.innerHTML = `
-                    <i class="fas fa-check"></i>
-                    <span>الإجابة الصحيحة: ${question.shuffledOptions[question.shuffledCorrect]}</span>
-                `;
-                answersDiv.appendChild(correctAnswerItem);
-                
-                if (question.explanation) {
-                    const explanationDiv = document.createElement('div');
-                    explanationDiv.style.marginTop = '0.5rem';
-                    explanationDiv.style.fontSize = '0.95rem';
-                    explanationDiv.style.color = 'var(--text-color)';
-                    explanationDiv.style.opacity = '0.8';
-                    explanationDiv.textContent = question.explanation;
-                    answersDiv.appendChild(explanationDiv);
-                }
-                
-                const statusDiv = document.createElement('div');
-                statusDiv.style.marginTop = '0.5rem';
-                statusDiv.style.fontWeight = 'bold';
-                
-                if (userAnswerIndex === null) {
-                    statusDiv.textContent = 'لم تجب على هذا السؤال';
-                    statusDiv.style.color = 'var(--warning-color)';
-                } else if (userAnswerIndex === question.shuffledCorrect) {
-                    statusDiv.textContent = '✓ إجابة صحيحة';
-                    statusDiv.style.color = 'var(--success-color)';
-                } else {
-                    statusDiv.textContent = '✗ إجابة خاطئة';
-                    statusDiv.style.color = 'var(--accent-color)';
-                }
-                
-                answersDiv.appendChild(statusDiv);
-                
-                reviewItem.appendChild(questionDiv);
-                reviewItem.appendChild(answersDiv);
-                reviewList.appendChild(reviewItem);
             });
+            
+            // إذا لم تكن هناك إجابات خاطئة
+            if (wrongCount === 0) {
+                wrongAnswersList.style.display = 'none';
+                noWrongAnswers.style.display = 'block';
+            } else {
+                wrongAnswersList.style.display = 'block';
+                noWrongAnswers.style.display = 'none';
+            }
         }
 
         // إعادة نفس الاختبار
@@ -2920,7 +3012,7 @@
             examScreen.classList.add('active');
             
             reviewSection.style.display = 'none';
-            reviewBtn.innerHTML = '<i class="fas fa-list-check"></i> مراجعة الإجابات';
+            reviewBtn.innerHTML = '<i class="fas fa-list-check"></i> مراجعة الإجابات الخاطئة';
             
             startTime = new Date();
             timeLeft = 60 * 60;
@@ -2949,7 +3041,7 @@
             updateUnansweredAlert();
             
             reviewSection.style.display = 'none';
-            reviewBtn.innerHTML = '<i class="fas fa-list-check"></i> مراجعة الإجابات';
+            reviewBtn.innerHTML = '<i class="fas fa-list-check"></i> مراجعة الإجابات الخاطئة';
         }
     </script>
 </body>
